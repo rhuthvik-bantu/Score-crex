@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHUTHVIK BANTU Cricket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Intro Animation -->
+<div id="intro">
+    <h1>RHUTHVIK BANTU</h1>
+</div>
+
+<!-- Main Content -->
+<div id="main-content" class="hidden">
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">RHUTHVIK BANTU</div>
+        <ul>
+            <li><a href="#live">Live Scores</a></li>
+            <li><a href="#upcoming">Upcoming</a></li>
+            <li><a href="#finished">Finished</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#chat">Chat</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard Sections -->
+    <section id="live" class="section">
+        <h2>Live Matches</h2>
+        <div class="cards-container" id="live-matches">
+            <!-- Live match cards injected via JS -->
+        </div>
+    </section>
+
+    <section id="upcoming" class="section">
+        <h2>Upcoming Matches</h2>
+        <div class="cards-container" id="upcoming-matches">
+            <!-- Upcoming match cards -->
+        </div>
+    </section>
+
+    <section id="finished" class="section">
+        <h2>Finished Matches</h2>
+        <div class="cards-container" id="finished-matches">
+            <!-- Finished match cards -->
+        </div>
+    </section>
+
+    <section id="news" class="section">
+        <h2>Cricket News</h2>
+        <div class="cards-container" id="news-cards">
+            <!-- News cards -->
+        </div>
+    </section>
+
+    <section id="chat" class="section">
+        <h2>Chat Room</h2>
+        <div class="chat-container">
+            <div id="chat-box"></div>
+            <input type="text" id="username" placeholder="Username">
+            <input type="text" id="message" placeholder="Type message...">
+            <button id="send-btn"><i class="fa fa-paper-plane"></i></button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 RHUTHVIK BANTU Cricket</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
