@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+/* Intro Animation */
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2c1a0f;
+    color: gold;
+    font-size: 4rem;
+    animation: fadeOut 3s forwards;
+}
+
+.hidden { display: none; }
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+/* Main Content */
+body {
+    background: #3a2a1c;
+    color: #f5f5dc;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #4b3724;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav .logo { font-weight: bold; font-size: 1.5rem; color: gold; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5dc;
+    transition: 0.3s;
+}
+nav ul li a:hover { color: gold; }
+
+/* Section */
+.section {
+    padding: 2rem;
+}
+.section h2 { margin-bottom: 1rem; color: gold; }
+
+/* Cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    background: #5b4031;
+    padding: 1rem;
+    border: 2px solid gold;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover { transform: scale(1.05); box-shadow: 0 0 20px gold; }
+
+/* Chat */
+.chat-container {
+    background: #5b4031;
+    padding: 1rem;
+    border: 2px solid gold;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+#chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid gold;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+#chat-box p { margin: 0.2rem 0; }
+#username, #message {
+    padding: 0.5rem;
+    margin-right: 0.3rem;
+    border-radius: 4px;
+    border: none;
+}
+#send-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: gold;
+    color: #2c1a0f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #4b3724;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .cards-container { justify-content: center; }
+    nav ul { flex-direction: column; gap: 1rem; }
+  }
